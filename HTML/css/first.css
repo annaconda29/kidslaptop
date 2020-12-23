@@ -2,7 +2,7 @@ div {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: example 10s linear 0s infinite alternate;
+    animation: example 5s linear 5s infinite alternate;
   }
   
   @keyframes example {
