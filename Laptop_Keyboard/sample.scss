@@ -1,0 +1,51 @@
+*:hover,
+*:active,
+*:focus {
+	-webkit-tap-highlight-color: transparent;
+}
+
+html, body, ul  {
+	overflow: hidden;
+}
+
+ul {
+	height: 100vh;
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+	
+	font-size: 3vw;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 700;
+	user-select: none;
+	cursor: pointer;
+}
+
+li {
+	transition: font-size .2s;
+	display: grid;
+	align-items: center;
+}
+
+active {
+		font-size: 1.5em;
+	}
+	focus{
+		box-shadow: 0px 3px 3px rgba(0,0,0,.5);
+	}
+
+
+@function hslColor($hue: 0, $saturation: 70%, $lightness: 65%) {
+  @return hsl($hue, $saturation, $lightness);
+}
+
+@for $i from 1 through 27 {
+	li:nth-of-type(#{$i}) {
+		$color: hslColor($hue: $i*80);
+		background-color: $color;
+	}
+}
