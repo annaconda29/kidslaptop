@@ -91,7 +91,7 @@ div.ui-keyboard-preview-wrapper {
   /* demo css - position input so it's not hugging the top of the demo frame */
   
   body {
-    margin-top: 100px;
+    margin-top: 10px;
     font-size: 10px;
   }
   
