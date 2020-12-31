@@ -1,0 +1,16 @@
+@property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  div {
+    transition: --num 1s;
+    counter-reset: num var(--num);
+  }
+  div:hover {
+    --num: 10000;
+  }
+  div::after {
+    content: counter(num);
+  }
