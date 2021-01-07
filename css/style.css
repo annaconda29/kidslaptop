@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(198, 234, 243);
+}
+
+h1 {
+    color:rgb(25, 39, 85); 
+    font-family:verdana; 
+    text-align:center;
+
+}
+
+p {
+    color:rgb(109, 157, 212); 
+    font-family:verdana; 
+    text-align:left;
+}
+
+ol {
+    color:rgb(230, 117, 224); 
+    font-family:verdana; 
+    text-align:left;
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+p{
+    color: Pink; 
+    font-family: "Courier";
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60em;
+    animation: type 4s steps(60, end); 
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
